@@ -11,8 +11,8 @@ function Car(make, model) {
 
 function SportsCar(make, model, topSpeed) {
 	constructor(make,model,topSpeed){
-		this.make = make;
-		this.model = make;
+		this._make = make;
+		this._model = make;
 		this._topSpeed = topSpeed;
 	}
 	getTopSpeed(){
