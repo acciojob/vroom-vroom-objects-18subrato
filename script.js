@@ -4,20 +4,22 @@ function Car(make, model) {
 		this.make = make;
 		this.model = model;
 	}
-	getMakeModel(){
+}
+
+Car.prototype.getMakeModel = function(){
 		return `${this.make} ${this.model}`;
 	}
-}
 
 function SportsCar(make, model, topSpeed) {
 	constructor(make,model,topSpeed){
 		super(make,model)
 		this.topSpeed = topSpeed;
 	}
-	getTopSpeed(){
+}
+
+SportsCar.prototype.getTopSpeed = function(){
 		return this.topSpeed;
 	}
-}
 
 const car = new SportsCar("Ferrari","Testarossa",200);
 console.log(car.getMakeModel());
